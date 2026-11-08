@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAD Reflections | Jhoemar S. Baluyo</title>
+  <style>
+    :root {
+      --navy: #10233f;
+      --blue: #245b9e;
+      --sky: #eaf3ff;
+      --ink: #263449;
+      --muted: #68778c;
+      --paper: #ffffff;
+      --line: #dce6f2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #f4f7fb;
+      line-height: 1.7;
+    }
+    header {
+      color: white;
+      background: linear-gradient(135deg, #10233f, #245b9e);
+      padding: 64px 22px 58px;
+    }
+    .hero, main, footer { width: min(960px, 92%); margin: auto; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .78rem;
+      font-weight: bold;
+      color: #b9d8ff;
+    }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.1; margin: 12px 0; }
+    .subtitle { color: #e1edff; max-width: 620px; margin: 0; }
+    .student { margin-top: 26px; font-weight: bold; color: white; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    .nav-inner {
+      width: min(960px, 92%); margin: auto; display: flex;
+      gap: 10px; overflow-x: auto; padding: 12px 0;
+    }
+    nav a {
+      flex: 0 0 auto; text-decoration: none; color: var(--blue);
+      font-weight: bold; font-size: .9rem; padding: 7px 12px;
+      border-radius: 20px;
+    }
+    nav a:hover { background: var(--sky); }
+    main { padding: 42px 0 60px; }
+    .intro { margin-bottom: 28px; }
+    h2 { color: var(--navy); margin: 0 0 8px; font-size: 1.65rem; }
+    .intro p { color: var(--muted); margin: 0; }
+    .reflection {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 18px; padding: 28px; margin: 18px 0;
+      box-shadow: 0 8px 24px rgba(22, 48, 82, .05);
+      scroll-margin-top: 80px;
+    }
+    .reflection-top {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 14px;
+    }
+    .number {
+      width: 46px; height: 46px; display: grid; place-items: center;
+      border-radius: 14px; background: var(--sky); color: var(--blue);
+      font-weight: bold; font-size: 1.05rem; flex: 0 0 auto;
+    }
+    .reflection h3 { margin: 0; color: var(--navy); font-size: 1.25rem; }
+    .tag {
+      display: inline-block; margin-top: 4px; color: var(--blue);
+      font-size: .78rem; font-weight: bold; letter-spacing: .4px;
+    }
+    .reflection p { margin: 12px 0 0; }
+    .team {
+      background: #f5f9ff; border-left: 4px solid var(--blue);
+      padding: 15px 18px; border-radius: 0 12px 12px 0; margin-top: 18px;
+    }
+    .team strong { color: var(--navy); }
+    footer {
+      border-top: 1px solid var(--line); padding: 24px 0 36px;
+      color: var(--muted); text-align: center; font-size: .9rem;
+    }
+    @media (max-width: 600px) {
+      header { padding: 48px 0; }
+      .reflection { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="eyebrow">Systems Analysis and Design</div>
+      <h1>My SAD Reflections</h1>
+      <p class="subtitle">A look back at what I learned, the challenges I experienced, and the projects I enjoyed throughout the subject.</p>
+      <p class="student">Baluyo, Jhoemar S.</p>
+    </div>
+  </header>
+
+  <nav aria-label="Reflection navigation">
+    <div class="nav-inner">
+      <a href="#reflection-1">Reflection 1</a>
+      <a href="#reflection-2">Reflection 2</a>
+      <a href="#reflection-3">Reflection 3</a>
+      <a href="#reflection-4">Reflection 4</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>My Learning Journey</h2>
+      <p>These reflections share my experiences in SAD, from learning the basic concepts to working with my friends on our group project.</p>
+    </section>
+
+    <article class="reflection" id="reflection-1">
+      <div class="reflection-top">
+        <div class="number">01</div>
+        <div>
+          <h3>Components and Types of Information Systems</h3>
+          <span class="tag">Getting started</span>
+        </div>
+      </div>
+      <p>For this week, we discussed the components of an information system and the different types of information systems. I found the lessons just okay because we were still starting with the subject and getting familiar with the basic concepts. We also learned how to create an IPO (Input-Process-Output) model. I learned that an IPO model helps explain how a system works by identifying the information or materials that go in, the process that happens, and the output that is produced. It gave me a clearer idea of how a system is organized.</p>
+    </article>
+
+    <article class="reflection" id="reflection-2">
+      <div class="reflection-top">
+        <div class="number">02</div>
+        <div>
+          <h3>Data Flow Diagram</h3>
+          <span class="tag">A challenging lesson</span>
+        </div>
+      </div>
+      <p>This week, we discussed Data Flow Diagrams (DFDs) and looked at examples of how they are made. I found this topic harder than the previous one because it was confusing to understand how the data moves between the different parts of a system. I had to pay closer attention to the symbols, processes, data stores, and how they connect. Even though it was challenging, the examples helped me understand how a DFD can show the flow of information in a system.</p>
+    </article>
+
+    <article class="reflection" id="reflection-3">
+      <div class="reflection-top">
+        <div class="number">03</div>
+        <div>
+          <h3>Structured English, Decision Tree, and Decision Table</h3>
+          <span class="tag">Understanding system logic</span>
+        </div>
+      </div>
+      <p>For this reflection, we discussed Structured English, Decision Trees, and Decision Tables. These topics showed me different ways to explain and organize the logic behind a system. Structured English uses simple statements to describe steps, while a decision tree presents choices in a branching diagram. A decision table organizes conditions and their possible actions in a table. I realized that these tools can make a system's rules and decisions easier to understand, especially when there are several conditions to consider.</p>
+    </article>
+
+    <article class="reflection" id="reflection-4">
+      <div class="reflection-top">
+        <div class="number">04</div>
+        <div>
+          <h3>Our Group Project: ADZU-FaciFix</h3>
+          <span class="tag">Learning through teamwork</span>
+        </div>
+      </div>
+      <p>For our fourth reflection, we worked on our group project called <strong>ADZU-FaciFix: Campus Facility Issue Reporting and Maintenance System</strong>. The project was made together with my friends: Baluan, Omar A.; DelosReyes, Harvey Matias; Ashby, Stefano T.; Mahilum, James Reimer; and me, Jhoemar S. Baluyo.</p>
+      <p>I enjoyed making this project with them. It was also challenging because building the system and working on its different parts took a lot of time and effort. There were moments when the work felt difficult, but we still managed to finish it. What made the experience more fun was doing it with my friends, the same people I usually hang out with late at night. Working together made the challenges feel lighter, and I learned that teamwork, patience, and communication are important when creating a system.</p>
+      <div class="team">
+        <strong>Project team</strong><br>
+        Baluan, Omar A. · DelosReyes, Harvey Matias · Ashby, Stefano T. · Mahilum, James Reimer · Baluyo, Jhoemar S.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Systems Analysis and Design (SAD) · Baluyo, Jhoemar S.</p>
+    <p>Learning one lesson and one experience at a time.</p>
+  </footer>
+</body>
+</html>
